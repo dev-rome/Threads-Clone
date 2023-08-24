@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="block md:hidden">
           <SignedIn>
             <SignOutButton>
-              <div className="flex cursor-auto">
+              <div className="flex cursor-pointer">
                 <Image
                   src="/assets/logout.svg"
                   alt="logout"
