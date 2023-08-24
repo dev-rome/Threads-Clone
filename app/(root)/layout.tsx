@@ -7,7 +7,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import LeftSideBar from "@/components/LeftSideBar";
 import RightSideBar from "@/components/RightSideBar";
-import Footer from "@/components/Footer";
+import BottomBar from "@/components/BottomBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,7 +33,7 @@ export default function RootLayout({
             </section>
             <RightSideBar />
           </main>
-          <Footer />
+          <BottomBar />
         </body>
       </html>
     </ClerkProvider>
