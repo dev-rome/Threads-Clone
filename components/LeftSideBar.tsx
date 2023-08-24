@@ -1,9 +1,53 @@
-import React from 'react'
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
+
+import { SignedIn, SignOutButton } from "@clerk/nextjs";
+
+import { sidebarLinks } from "@/constants";
 
 const LeftSideBar = () => {
+  const router = useRouter();
+  const pathname = usePathname();
   return (
-    <div>LeftSideBar</div>
-  )
-}
+    <aside className="custom-scrollbar leftsidebar">
+      <ul className="flex flex-col flex-1 gap-6 w-full px-6">
+        {sidebarLinks.map(({ imgURL, route, label }) => {
+          const isActive =
+            (pathname.includes(route) && route.length > 1) ||
+            pathname === route;
+          return (
+            <li key={label}>
+              <Link
+                href={route}
+                className={`leftsidebar_link ${isActive && "bg-primary-500"}`}
+              >
+                <Image src={imgURL} alt={label} width={24} height={24} />
+                <p className="max-lg:hidden text-light-1">{label}</p>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+      <div className="mt-10 px-6">
+        <SignedIn>
+          <SignOutButton signOutCallback={() => router.push("/sign-in")}>
+            <div className="flex cursor-pointer gap-4 p-4">
+              <Image
+                src="/assets/logout.svg"
+                alt="logout"
+                width={24}
+                height={24}
+              />
+              <p className="text-light-2 max-lg:hidden">Logout</p>
+            </div>
+          </SignOutButton>
+        </SignedIn>
+      </div>
+    </aside>
+  );
+};
 
-export default LeftSideBar
+export default LeftSideBar;
