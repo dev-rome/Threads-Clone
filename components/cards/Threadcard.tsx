@@ -4,7 +4,7 @@ import Link from "next/link";
 import { formatDateString } from "@/lib/utils";
 import DeleteThread from "../forms/DeleteThread";
 
-interface Props {
+interface ThreadCardProps {
   id: string;
   currentUserId: string;
   parentId: string | null;
@@ -38,7 +38,7 @@ function ThreadCard({
   createdAt,
   comments,
   isComment,
-}: Props) {
+}: ThreadCardProps) {
   return (
     <article
       className={`flex w-full flex-col rounded-xl ${
