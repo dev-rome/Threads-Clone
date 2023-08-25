@@ -12,7 +12,7 @@ export default async function Home() {
   return (
     <section>
       <h1 className="head-text">Home</h1>
-      <article className="mt-9 flex flex-col gap-10">
+      <div className="mt-9 flex flex-col gap-10">
         {results.posts.length === 0 ? (
           <p className="no-result">No threads found</p>
         ) : (
@@ -32,7 +32,7 @@ export default async function Home() {
             ))}
           </>
         )}
-      </article>
+      </div>
     </section>
   );
 }
