@@ -1,11 +1,13 @@
 import { redirect } from "next/navigation";
 import { currentUser } from "@clerk/nextjs";
 
+import Comment from "@/components/forms/Comment";
+import ThreadCard from "@/components/cards/ThreadCard";
+
 import { fetchUser } from "@/lib/actions/user.actions";
 import { fetchThreadById } from "@/lib/actions/thread.actions";
 
-import ThreadCard from "@/components/cards/ThreadCard";
-import Comment from "@/components/forms/Comment";
+export const revalidate = 0;
 
 export default async function page({ params }: { params: { id: string } }) {
   if (!params.id) return null;
@@ -22,9 +24,8 @@ export default async function page({ params }: { params: { id: string } }) {
     <section className="relative">
       <>
         <ThreadCard
-          key={thread._id}
           id={thread._id}
-          currentUserId={user?.id || ""}
+          currentUserId={user.id}
           parentId={thread.parentId}
           content={thread.text}
           author={thread.author}
