@@ -28,7 +28,7 @@ interface ThreadCardProps {
   isComment?: boolean;
 }
 
-function ThreadCard({
+const ThreadCard = ({
   id,
   currentUserId,
   parentId,
@@ -38,7 +38,7 @@ function ThreadCard({
   createdAt,
   comments,
   isComment,
-}: ThreadCardProps) {
+}: ThreadCardProps) => {
   return (
     <article
       className={`flex w-full flex-col rounded-xl ${
@@ -165,6 +165,6 @@ function ThreadCard({
       )}
     </article>
   );
-}
+};
 
 export default ThreadCard;
