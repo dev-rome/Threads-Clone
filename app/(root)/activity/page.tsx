@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 
 import { fetchUser, getActivity } from "@/lib/actions/user.actions";
 
-export default async function Page() {
+export default async function page() {
   const user = await currentUser();
   if (!user) return null;
 

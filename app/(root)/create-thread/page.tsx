@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import PostThread from "@/components/forms/PostThread";
 import { fetchUser } from "@/lib/actions/user.actions";
 
-export default async function Page() {
+export default async function page() {
   const user = await currentUser();
   if (!user) return null;
 

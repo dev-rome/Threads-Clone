@@ -8,7 +8,7 @@ import CommunityCard from "@/components/cards/CommunityCard";
 import { fetchUser } from "@/lib/actions/user.actions";
 import { fetchCommunities } from "@/lib/actions/community.actions";
 
-export default async function Page({
+export default async function page({
   searchParams,
 }: {
   searchParams: { [key: string]: string | undefined };

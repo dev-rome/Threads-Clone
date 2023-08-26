@@ -7,7 +7,7 @@ import Pagination from "@/components/Pagination";
 
 import { fetchUser, fetchUsers } from "@/lib/actions/user.actions";
 
-export default async function Page({
+export default async function page({
   searchParams,
 }: {
   searchParams: { [key: string]: string | undefined };
