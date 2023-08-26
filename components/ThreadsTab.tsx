@@ -38,7 +38,11 @@ interface ThreadTabProps {
   accountType: string;
 }
 
-const ThreadsTab = async ({ currentUserId, accountId, accountType }: ThreadTabProps) => {
+const ThreadsTab = async ({
+  currentUserId,
+  accountId,
+  accountType,
+}: ThreadTabProps) => {
   let result: Result;
 
   if (accountType === "Community") {
@@ -80,6 +84,6 @@ const ThreadsTab = async ({ currentUserId, accountId, accountType }: ThreadTabPr
       ))}
     </section>
   );
-}
+};
 
 export default ThreadsTab;
