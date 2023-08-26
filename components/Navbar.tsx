@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { SignedIn, SignOutButton, OrganizationSwitcher } from "@clerk/nextjs";
 
-import { dark } from "@clerk/themes"
+import { dark } from "@clerk/themes";
 
 const Navbar = () => {
   return (
