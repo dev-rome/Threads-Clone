@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import { fetchCommunityPosts } from "@/lib/actions/community.actions";
 import { fetchUserPosts } from "@/lib/actions/user.actions";
 
-import ThreadCard from "@/components/cards/ThreadCard";
+import ThreadCard from "../components/cards/ThreadCard";
 
 interface Result {
   name: string;
