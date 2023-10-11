@@ -1,4 +1,6 @@
 # Threads-Clone - Next.js Practice Project
+
+## General Info
 Threads-Clone is a web application that I developed as both a practice project to learn Next.js and a tutorial project to help others learn how to use Next.js. While it is not fully functional, it allowed me to explore the capabilities of Next.js, Tailwind CSS, and TypeScript.
 
 ## Screenshots
