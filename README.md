@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Threads-Clone - Next.js Practice Project
+Threads-Clone is a web application that I developed as both a practice project to learn Next.js and a tutorial project to help others learn how to use Next.js. While it is not fully functional, it allowed me to explore the capabilities of Next.js, Tailwind CSS, and TypeScript
 
-## Getting Started
+## Screenshots
+<img width="1440" alt="Screenshot 2023-10-11 at 2 34 50 PM" src="https://github.com/dev-rome/Threads-Clone/assets/84602714/00fd0c24-1da6-400d-aa83-b5acf7b6b5f0">
+<img width="1440" alt="Screenshot 2023-10-11 at 2 34 56 PM" src="https://github.com/dev-rome/Threads-Clone/assets/84602714/2bdf5283-e557-4298-b216-67a966934476">
+<img width="1440" alt="Screenshot 2023-10-11 at 2 35 41 PM" src="https://github.com/dev-rome/Threads-Clone/assets/84602714/6d051104-32dc-47f8-ba75-56d1754e5b92">
+<img width="1440" alt="Screenshot 2023-10-11 at 2 35 56 PM" src="https://github.com/dev-rome/Threads-Clone/assets/84602714/a70fd475-fb84-43dc-a232-3611ab7f7d3c">
+<img width="1440" alt="Screenshot 2023-10-11 at 2 36 05 PM" src="https://github.com/dev-rome/Threads-Clone/assets/84602714/f3adba5b-3d42-4630-a372-293eb7d0b93c">
+<img width="1440" alt="Screenshot 2023-10-11 at 2 36 13 PM" src="https://github.com/dev-rome/Threads-Clone/assets/84602714/3b38e807-ba51-4151-accc-4f7f3fe647c4">
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Technologies Used
+- Next.js
+- TypeScript
+- Tailwind CSS
+- MongoDB
+- Mongoose
+- Next Auth
+- Clerk
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+List the ready features here:
+- Create Post
+- Edit Post
+- Read Post
+- Delete Post
+- Comment on post
+- Search User
+- Check Recent Activity
+- Create Community
+- Join Community
+- Sign Up/Login
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## To do
+- Like post
+- Share post
+- Re-post
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Acknowledgements
+This project was based on [Tutorial]([https://www.example.comhttps://www.youtube.com/watch?v=pUNSHPyVryU](https://www.youtube.com/watch?v=O5cmLDVTgAs&t=7548s)https://www.youtube.com/watch?v=O5cmLDVTgAs&t=7548s).
